@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 int main(void){
-  int x;
+    int x;
 
-  printf("Digite um número inteiro: ");
-  scanf("%d", &x);
+    printf("Digite um número inteiro: ");
+    scanf("%d", &x);
 
-  (x % 2)? printf("%d é ÍMPAR.\n", x) : printf("%d é PAR.\n", x);
-  
-  return 0;
+    (x % 2)? printf("%d é ÍMPAR.\n", x) : printf("%d é PAR.\n", x);
+    
+    return 0;
 }

@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(void){
-  float valor;
+    float valor;
 
-  printf("Valor da conta: R$ ");
-  scanf("%f", &valor);
+    printf("Valor da conta: R$ ");
+    scanf("%f", &valor);
 
-  valor += (0.1 * valor);
-  printf("Valor total: R$ %.2f\n", valor);
-  
-  return 0;
+    valor += (0.1 * valor);
+    printf("Valor total: R$ %.2f\n", valor);
+    
+    return 0;
 }

@@ -6,24 +6,24 @@ Escreva um programa em C que imprima os inteiros equivalentes a algumas letras m
 #include <stdio.h>
 
 int main(void){
-  printf("\nA = %d\n", 'A');
-  printf("B = %d\n", 'B');
-  printf("C = %d\n", 'C');
-  
-  printf("\na = %d\n", 'a');
-  printf("b = %d\n", 'b');
-  printf("c = %d\n", 'c');
+    printf("\nA = %d\n", 'A');
+    printf("B = %d\n", 'B');
+    printf("C = %d\n", 'C');
+    
+    printf("\na = %d\n", 'a');
+    printf("b = %d\n", 'b');
+    printf("c = %d\n", 'c');
 
-  printf("\n0 = %d\n", '0');
-  printf("1 = %d\n", '1');
-  printf("2 = %d\n", '2');
+    printf("\n0 = %d\n", '0');
+    printf("1 = %d\n", '1');
+    printf("2 = %d\n", '2');
 
-  printf("\nESPAÇO = %d\n", ' ');
-  printf("$ = %d\n", '$');
-  printf("* = %d\n", '*');
-  printf("+ = %d\n", '+');
-  printf(". = %d\n", '.');
-  printf("/ = %d\n", '/');
-  
-  return 0;
+    printf("\nESPAÇO = %d\n", ' ');
+    printf("$ = %d\n", '$');
+    printf("* = %d\n", '*');
+    printf("+ = %d\n", '+');
+    printf(". = %d\n", '.');
+    printf("/ = %d\n", '/');
+    
+    return 0;
 }

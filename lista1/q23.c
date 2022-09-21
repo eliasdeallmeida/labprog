@@ -3,24 +3,24 @@
 #include <stdio.h>
 
 int main(void){
-  int num, algarismo;
+    int num, algarismo;
 
-  printf("Digite um número: ");
-  scanf("%d", &num);
+    printf("Digite um número: ");
+    scanf("%d", &num);
 
-  printf("%d ao contrário vale ", num);
-  
-  if(num < 0){
-    printf("-");
-    num = ~num + 1;
-  }
-  
-  while(num != 0){
-    algarismo = num % 10;
-    printf("%d", algarismo);
-    num /= 10;
-  }
-  printf("\n");
-  
-  return 0;
+    printf("%d ao contrário vale ", num);
+    
+    if(num < 0){
+        printf("-");
+        num = ~num + 1;
+    }
+    
+    while(num != 0){
+        algarismo = num % 10;
+        printf("%d", algarismo);
+        num /= 10;
+    }
+    printf("\n");
+    
+    return 0;
 }

@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main(void){
-  int h, min, s;
+    int h, min, s;
 
-  printf("Horas: ");
-  scanf("%d", &h);
+    printf("Horas: ");
+    scanf("%d", &h);
 
-  printf("Minutos: ");
-  scanf("%d", &min);
+    printf("Minutos: ");
+    scanf("%d", &min);
 
-  printf("Segundos: ");
-  scanf("%d", &s);
+    printf("Segundos: ");
+    scanf("%d", &s);
 
-  s += h * 3600 + min * 60;
-  printf("Tempo total = %d s\n", s);
-  
-  return 0;
+    s += h * 3600 + min * 60;
+    printf("Tempo total = %d s\n", s);
+    
+    return 0;
 }

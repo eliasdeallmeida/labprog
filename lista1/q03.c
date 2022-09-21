@@ -3,10 +3,12 @@
 #include <stdio.h>
 
 int main(void){
-  float num;
+    float num;
 
-  printf("Digite um número com casas decimais: ");
-  scanf("%f", &num);
+    printf("Digite um número com casas decimais: ");
+    scanf("%f", &num);
 
-  printf("Esse número com apenas uma casa decimal vale %.1f\n", num);
+    printf("Esse número com apenas uma casa decimal vale %.1f\n", num);
+
+    return 0;
 }

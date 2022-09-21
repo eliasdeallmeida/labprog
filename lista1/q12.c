@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main(void){
-  int x, y;
+    int x, y;
 
-  printf("Digite um número inteiro: ");
-  scanf("%d", &x);
+    printf("Digite um número inteiro: ");
+    scanf("%d", &x);
 
-  printf("Digite outro número inteiro: ");
-  scanf("%d", &y);
+    printf("Digite outro número inteiro: ");
+    scanf("%d", &y);
 
-  printf("%d + %d = %d\n", x, y, x + y);
-  printf("%d - %d = %d\n", x, y, x - y);
-  printf("%d * %d = %d\n", x, y, x * y);
-  printf("%d / %d = %.1f\n", x, y, (float)x / y);
-  printf("Resto de %d / %d = %d\n", x, y, x % y);
+    printf("%d + %d = %d\n", x, y, x + y);
+    printf("%d - %d = %d\n", x, y, x - y);
+    printf("%d * %d = %d\n", x, y, x * y);
+    printf("%d / %d = %.1f\n", x, y, (float)x / y);
+    printf("Resto de %d / %d = %d\n", x, y, x % y);
 
-  return 0;
+    return 0;
 }

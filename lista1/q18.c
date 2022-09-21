@@ -4,15 +4,15 @@
 #include <math.h>
 
 int main(void){
-  int r;
-  float pi = 3.14159;
+    int r;
+    float pi = 3.14159;
 
-  printf("Informe o valor do raio (m): ");
-  scanf("%d", &r);
+    printf("Informe o valor do raio (m): ");
+    scanf("%d", &r);
 
-  printf("Diâmetro = %d m\n", r * 2);
-  printf("Circunferência = %.2f m\n", 2 * pi * r);
-  printf("Área = %.2f m^2\n", pi * pow(r, 2));
-  
-  return 0;
+    printf("Diâmetro = %d m\n", r * 2);
+    printf("Circunferência = %.2f m\n", 2 * pi * r);
+    printf("Área = %.2f m^2\n", pi * pow(r, 2));
+    
+    return 0;
 }

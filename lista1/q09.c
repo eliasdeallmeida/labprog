@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(void){
-  int num;
+    int num;
 
-  printf("Digite um número: ");
-  scanf("%d", &num);
+    printf("Digite um número: ");
+    scanf("%d", &num);
 
-  printf("Antecessor = %d\n", num - 1);
-  printf("Sucessor = %d\n", num + 1);
-  
-  return 0;
+    printf("Antecessor = %d\n", num - 1);
+    printf("Sucessor = %d\n", num + 1);
+    
+    return 0;
 }

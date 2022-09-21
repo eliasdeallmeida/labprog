@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 int main(void){
-  float c, f;
+    float c, f;
 
-  printf("Temperatura (°C): ");
-  scanf("%f", &c);
+    printf("Temperatura (°C): ");
+    scanf("%f", &c);
 
-  f = (9 * c + 160) / 5;
-  printf("%.1f °C = %.1f °F\n", c, f);
+    f = (9 * c + 160) / 5;
+    printf("%.1f °C = %.1f °F\n", c, f);
 
-  return 0;
+    return 0;
 }

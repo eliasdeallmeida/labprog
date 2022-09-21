@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 int main(void){
-  int x, y;
+    int x, y;
 
-  printf("Digite um número: ");
-  scanf("%d", &x);
+    printf("Digite um número: ");
+    scanf("%d", &x);
 
-  printf("Digite outro número: ");
-  scanf("%d", &y);
+    printf("Digite outro número: ");
+    scanf("%d", &y);
 
-  (x % y)? printf("%d não é múltiplo de %d\n", x, y) : printf("%d é múltiplo de %d\n", x, y);
-  
-  return 0;
+    (x % y)? printf("%d não é múltiplo de %d\n", x, y) : printf("%d é múltiplo de %d\n", x, y);
+    
+    return 0;
 }

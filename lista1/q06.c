@@ -8,28 +8,28 @@ II) para mulheres: 62.1 * altura - 44.7
 #include <ctype.h>
 
 int main(void){
-  float altura, pesoIdeal;
-  char sexo;
+    float altura, pesoIdeal;
+    char sexo;
 
-  printf("Sua altura [metros]: ");
-  scanf("%f", &altura);
+    printf("Sua altura [metros]: ");
+    scanf("%f", &altura);
 
-  printf("Seu sexo [M/F]: ");
-  scanf(" %c", &sexo);
+    printf("Seu sexo [M/F]: ");
+    scanf(" %c", &sexo);
 
-  sexo = toupper(sexo);
+    sexo = toupper(sexo);
 
-  if(sexo == 'M'){
-    pesoIdeal = 72.7 * altura - 58;
-  }
-  else if(sexo == 'F'){
-    pesoIdeal = 62.1 * altura - 44.7;
-  }
-  else{
-    printf("ERRO\n");
-  }
+    if(sexo == 'M'){
+        pesoIdeal = 72.7 * altura - 58;
+    }
+    else if(sexo == 'F'){
+        pesoIdeal = 62.1 * altura - 44.7;
+    }
+    else{
+        printf("ERRO\n");
+    }
 
-  printf("Seu peso ideal: %.1f Kg\n", pesoIdeal);
-  
-  return 0;
+    printf("Seu peso ideal: %.1f Kg\n", pesoIdeal);
+    
+    return 0;
 }

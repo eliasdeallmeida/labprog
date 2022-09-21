@@ -4,13 +4,13 @@
 #include <math.h>
 
 int main(void){
-  int num, quadrado;
-  
-  printf("Digie um número: ");
-  scanf("%d", &num);
+    int num, quadrado;
+    
+    printf("Digie um número: ");
+    scanf("%d", &num);
 
-  quadrado = pow(num, 2);
-  printf("%d^2 = %d\n", num, quadrado);
-  
-  return 0;
+    quadrado = pow(num, 2);
+    printf("%d^2 = %d\n", num, quadrado);
+    
+    return 0;
 }

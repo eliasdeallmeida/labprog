@@ -3,23 +3,23 @@
 #include <stdio.h>
 
 int main(void){
-  int a, b;
+    int a, b;
 
-  printf("Digite um número: ");
-  scanf("%d", &a);
-  
-  printf("Digite outro número: ");
-  scanf("%d", &b);
+    printf("Digite um número: ");
+    scanf("%d", &a);
+    
+    printf("Digite outro número: ");
+    scanf("%d", &b);
 
-  printf("Antes da conversão:\n");
-  printf("A = %d | B = %d\n", a, b);
+    printf("Antes da conversão:\n");
+    printf("A = %d | B = %d\n", a, b);
 
-  a ^= b;
-  b ^= a;
-  a ^= b;
+    a ^= b;
+    b ^= a;
+    a ^= b;
 
-  printf("Depois da conversão:\n");
-  printf("A = %d | B = %d\n", a , b);
-  
-  return 0;
+    printf("Depois da conversão:\n");
+    printf("A = %d | B = %d\n", a , b);
+    
+    return 0;
 }

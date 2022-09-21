@@ -3,19 +3,19 @@
 #include <stdio.h>
 
 int main(void){
-  int volume, comprimento, largura, altura;
+    int volume, comprimento, largura, altura;
 
-  printf("Comprimento [metros]: ");
-  scanf("%d", &comprimento);
+    printf("Comprimento [metros]: ");
+    scanf("%d", &comprimento);
 
-  printf("Largura [metros]: ");
-  scanf("%d", &largura);
+    printf("Largura [metros]: ");
+    scanf("%d", &largura);
 
-  printf("Altura [metros]: ");
-  scanf("%d", &altura);
+    printf("Altura [metros]: ");
+    scanf("%d", &altura);
 
-  volume = comprimento * largura * altura;
-  printf("Volume = %d m^3\n", volume);
+    volume = comprimento * largura * altura;
+    printf("Volume = %d m^3\n", volume);
 
-  return 0;
+    return 0;
 }

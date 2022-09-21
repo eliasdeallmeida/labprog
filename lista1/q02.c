@@ -8,13 +8,13 @@ II) Octal: 12
 #include <stdio.h>
 
 int main(void){
-  int x;
-  
-  printf("Digite um número decimal: ");
-  scanf("%d", &x);
+    int x;
+    
+    printf("Digite um número decimal: ");
+    scanf("%d", &x);
 
-  printf("%d decimal = %o octal\n", x, x);
-  printf("%d decimal = %x hexadecimal\n", x, x);
-  
-  return 0;
+    printf("%d decimal = %o octal\n", x, x);
+    printf("%d decimal = %x hexadecimal\n", x, x);
+    
+    return 0;
 }

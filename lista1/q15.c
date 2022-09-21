@@ -3,32 +3,32 @@
 #include <stdio.h>
 
 int main(void){
-  int dias;
-  float salario, gratificacao;
+    int dias;
+    float salario, gratificacao;
 
-  printf("Dias trabalhados: ");
-  scanf("%d", &dias);
+    printf("Dias trabalhados: ");
+    scanf("%d", &dias);
 
-  salario = 50.25 * dias;
-  printf("Salário bruto: R$ %.2f\n", salario);
+    salario = 50.25 * dias;
+    printf("Salário bruto: R$ %.2f\n", salario);
 
-  if(dias <= 10){
-    printf("Você não receberá gratificação.\n");
-  }
-  else if(dias <= 20){
-    gratificacao = 0.2 * salario;
-    printf("Você receberá R$ %.2f de gratificação.\n", gratificacao);
-  }
-  else if(dias > 20){
-    gratificacao = 0.3 * salario;
-    printf("Você receberá R$ %.2f de gratificação.\n", gratificacao);
-  }
-  
-  salario -= 0.1 * salario;
-  printf("Salário descontado: R$ %.2f\n", salario);
+    if(dias <= 10){
+        printf("Você não receberá gratificação.\n");
+    }
+    else if(dias <= 20){
+        gratificacao = 0.2 * salario;
+        printf("Você receberá R$ %.2f de gratificação.\n", gratificacao);
+    }
+    else if(dias > 20){
+        gratificacao = 0.3 * salario;
+        printf("Você receberá R$ %.2f de gratificação.\n", gratificacao);
+    }
+    
+    salario -= 0.1 * salario;
+    printf("Salário descontado: R$ %.2f\n", salario);
 
-  salario += gratificacao;
-  printf("Salário líquido: R$ %.2f\n", salario);
-  
-  return 0;
+    salario += gratificacao;
+    printf("Salário líquido: R$ %.2f\n", salario);
+    
+    return 0;
 }
