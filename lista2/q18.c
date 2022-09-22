@@ -4,13 +4,13 @@
 #include <math.h>
 
 int main(void){
-  int quadros;
-  float soma = 0;
+    int quadros;
+    float soma = 0;
 
-  for(quadros = 0; quadros < 64; quadros++){
-    soma += pow(2, quadros);
-    printf("Em %d quadros terão %.0f grãos de trigo.\n", quadros+1, soma);
-  }
-  
-  return 0;
+    for(quadros = 0; quadros < 64; quadros++){
+        soma += pow(2, quadros);
+        printf("Em %d quadros terão %.0f grãos de trigo.\n", quadros+1, soma);
+    }
+    
+    return 0;
 }

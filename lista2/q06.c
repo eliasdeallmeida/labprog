@@ -4,49 +4,49 @@
 #include <ctype.h>
 
 int main(void){
-  int voto, v5, v7, vb, vn, total;
-  char confirma;
-  
-  v5 = v7 = vb = vn = total = 0;
+    int voto, v5, v7, vb, vn, total;
+    char confirma;
+    
+    v5 = v7 = vb = vn = total = 0;
 
-  while(1){
-    printf("------------------------------------------\n");
-    printf("Seu voto: ");
-    scanf("%d", &voto);
+    while(1){
+        printf("------------------------------------------\n");
+        printf("Seu voto: ");
+        scanf("%d", &voto);
 
-    if(voto < 0){
-      printf("Votação encerrada!\n");
-      printf("------------------------------------------\n");
-      break;
+        if(voto < 0){
+            printf("Votação encerrada!\n");
+            printf("------------------------------------------\n");
+            break;
+        }
+        else{
+            printf("Você teclou (%d). Confirma o voto? [S/N] ", voto);
+            scanf(" %c", &confirma);
+
+            confirma = toupper(confirma);
+            
+            if(confirma == 'S'){
+                printf("Voto efetuado com sucesso!\n");
+                total++;
+            }
+            else{
+                printf("Voto não efetuado. Tente novamente.\n");
+                continue;
+            }
+        }
+
+        if(voto == 5) v5++;
+        else if(voto == 7) v7++;
+        else if(voto == 0) vb++;
+        else vn++; 
     }
-    else{
-      printf("Você teclou (%d). Confirma o voto? [S/N] ", voto);
-      scanf(" %c", &confirma);
 
-      confirma = toupper(confirma);
-      
-      if(confirma == 'S'){
-        printf("Voto efetuado com sucesso!\n");
-        total++;
-      }
-      else{
-        printf("Voto não efetuado. Tente novamente.\n");
-        continue;
-      }
-    }
-
-    if(voto == 5) v5++;
-    else if(voto == 7) v7++;
-    else if(voto == 0) vb++;
-    else vn++; 
-  }
-
-  printf("\n===== RESULTADO DA ELEIÇÃO =====\n");
-  printf("Paulo (5): %d votos (%.1f%%)\n", v5, (float)v5/total*100);
-  printf("Renata (7): %d votos (%.1f%%)\n", v7, (float)v7/total*100);
-  printf("Branco (0): %d votos (%.1f%%)\n", vb, (float)vb/total*100);
-  printf("Nulo: %d votos (%.1f%%)\n", vn, (float)vn/total*100);
-  printf("TOTAL: %d votos\n", total);
-  
-  return 0;
+    printf("\n===== RESULTADO DA ELEIÇÃO =====\n");
+    printf("Paulo (5): %d votos (%.1f%%)\n", v5, (float)v5/total*100);
+    printf("Renata (7): %d votos (%.1f%%)\n", v7, (float)v7/total*100);
+    printf("Branco (0): %d votos (%.1f%%)\n", vb, (float)vb/total*100);
+    printf("Nulo: %d votos (%.1f%%)\n", vn, (float)vn/total*100);
+    printf("TOTAL: %d votos\n", total);
+    
+    return 0;
 }

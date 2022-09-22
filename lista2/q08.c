@@ -3,17 +3,17 @@
 #include <stdio.h>
 
 int main(void){
-  float valor, entrada;
-  int prestacoes;
+    float valor, entrada;
+    int prestacoes;
 
-  printf("Valor da mercadoria: R$ ");
-  scanf("%f", &valor);
+    printf("Valor da mercadoria: R$ ");
+    scanf("%f", &valor);
 
-  prestacoes = (int)valor / 3;
-  entrada = valor - prestacoes * 2;
-  
-  printf("Entrada = R$ %.2f\n", entrada);
-  printf("Duas prestações = R$ %.2f\n", (float)prestacoes);
-  
-  return 0;
+    prestacoes = (int)valor / 3;
+    entrada = valor - prestacoes * 2;
+    
+    printf("Entrada = R$ %.2f\n", entrada);
+    printf("Duas prestações = R$ %.2f\n", (float)prestacoes);
+    
+    return 0;
 }

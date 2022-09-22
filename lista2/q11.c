@@ -4,28 +4,28 @@
 #include <math.h>
 
 int main(void){
-  int a, b, quadrado;
+    int a, b, quadrado;
 
-  printf("Informe um intervalo de números\n");
-  printf("Valor de A = ");
-  scanf("%d", &a);
-  printf("Valor de B = ");
-  scanf("%d", &b);
+    printf("Informe um intervalo de números\n");
+    printf("Valor de A = ");
+    scanf("%d", &a);
+    printf("Valor de B = ");
+    scanf("%d", &b);
 
-  if(a > b){
-    a ^= b;
-    b ^= a;
-    a ^= b;
-  }
-
-  printf("Dentro do intervalo %d-%d, os quadrados dos múltiplos de 4 são:\n", a, b);
-  
-  for(int n = a; n <= b; n++){
-    if(n % 4 == 0){
-      quadrado = pow(n, 2);
-      printf("%d^2 = %d\n", n, quadrado);
+    if(a > b){
+        a ^= b;
+        b ^= a;
+        a ^= b;
     }
-  }
-  
-  return 0;
+
+    printf("Dentro do intervalo %d-%d, os quadrados dos múltiplos de 4 são:\n", a, b);
+    
+    for(int n = a; n <= b; n++){
+        if(n % 4 == 0){
+            quadrado = pow(n, 2);
+            printf("%d^2 = %d\n", n, quadrado);
+        }
+    }
+    
+    return 0;
 }

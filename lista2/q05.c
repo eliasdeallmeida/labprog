@@ -3,31 +3,31 @@
 #include <stdio.h>
 
 int main(void){
-  int n, maior, menor;
-  
-  for(int cont = 1;; cont++){
-    printf("%dº número: ", cont);
-    scanf("%d", &n);
+    int n, maior, menor;
+    
+    for(int cont = 1;; cont++){
+        printf("%dº número: ", cont);
+        scanf("%d", &n);
 
-    if(cont == 1){
-      maior = n;
-      menor = n;
+        if(cont == 1){
+            maior = n;
+            menor = n;
+        }
+        else{
+            if(n == 0){
+                printf("Encerrando o programa...\n");
+                break;
+            }
+            else if(n > maior){
+                maior = n;
+            }
+            else if(n < menor){
+                menor = n;
+            }
+        }
     }
-    else{
-      if(n == 0){
-        printf("Encerrando o programa...\n");
-        break;
-      }
-      else if(n > maior){
-        maior = n;
-      }
-      else if(n < menor){
-        menor = n;
-      }
-    }
-  }
 
-  printf("O maior digitado foi %d e o menor foi %d\n", maior, menor);
-  
-  return 0;
+    printf("O maior digitado foi %d e o menor foi %d\n", maior, menor);
+    
+    return 0;
 }

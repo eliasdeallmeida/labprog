@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 int main(void){
-  float c, f;
+    float c, f;
 
-  for(c = 10; c <= 100; c += 10){
-    f = c * 9/5 + 32;
-    printf("%.1f °C = %.1f °F\n", c, f);
-  }
-  
-  return 0;
+    for(c = 10; c <= 100; c += 10){
+        f = c * 9/5 + 32;
+        printf("%.1f °C = %.1f °F\n", c, f);
+    }
+    
+    return 0;
 }

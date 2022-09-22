@@ -5,26 +5,26 @@
 #define MAX 5
 
 int main(void){
-  int num, inverso, algarismo, aux;
+    int num, inverso, algarismo, aux;
 
-  printf("Digite um número de 5 dígitos: ");
-  scanf("%d", &num);
+    printf("Digite um número de 5 dígitos: ");
+    scanf("%d", &num);
 
-  aux = num;
-  inverso = 0;
+    aux = num;
+    inverso = 0;
 
-  for(int i = MAX-1; i >= 0; i--){
-    algarismo = aux % 10;
-    inverso += algarismo * pow(10, i);
-    aux /= 10;
-  }
+    for(int i = MAX-1; i >= 0; i--){
+        algarismo = aux % 10;
+        inverso += algarismo * pow(10, i);
+        aux /= 10;
+    }
 
-  printf("O número digitado foi %d e seu inverso é %d\n", num, inverso);
+    printf("O número digitado foi %d e seu inverso é %d\n", num, inverso);
 
-  if(num == inverso)
-    printf("Logo, é um palíndromo!\n");
-  else
-    printf("Logo, NÃO é um palíndromo!\n");
-  
-  return 0;
+    if(num == inverso)
+        printf("Logo, é um palíndromo!\n");
+    else
+        printf("Logo, NÃO é um palíndromo!\n");
+    
+    return 0;
 }

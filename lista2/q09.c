@@ -3,18 +3,18 @@
 #include <stdio.h>
 
 int main(void){
-  int a, b, c;
-  a = b = 1;
+    int a, b, c;
+    a = b = 1;
 
-  printf("%d - > %d -> ", a, b);
+    printf("%d - > %d -> ", a, b);
 
-  for(int n = 2; n < 20; n++){
-    c = a + b;
-    a = b;
-    b = c;
-    printf("%d -> ", c);
-  }
-  printf("FIM\n");
-  
-  return 0;
+    for(int n = 2; n < 20; n++){
+        c = a + b;
+        a = b;
+        b = c;
+        printf("%d -> ", c);
+    }
+    printf("FIM\n");
+    
+    return 0;
 }

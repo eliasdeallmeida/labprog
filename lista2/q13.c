@@ -3,26 +3,26 @@
 #include <stdio.h>
 
 int main(void){
-  int a, b, soma = 0;
+    int a, b, soma = 0;
 
-  printf("Informe um intervalo de números\n");
-  printf("Valor de A = ");
-  scanf("%d", &a);
-  printf("Valor de B = ");
-  scanf("%d", &b);
+    printf("Informe um intervalo de números\n");
+    printf("Valor de A = ");
+    scanf("%d", &a);
+    printf("Valor de B = ");
+    scanf("%d", &b);
 
-  if(a > b){
-    a ^= b;
-    b ^= a;
-    a ^= b;
-  }
+    if(a > b){
+        a ^= b;
+        b ^= a;
+        a ^= b;
+    }
 
-  for(int n = a; n <= b; n++){
-    if(n % 2 == 0)
-      soma += n;
-  }
+    for(int n = a; n <= b; n++){
+        if(n % 2 == 0)
+            soma += n;
+    }
 
-  printf("A soma dos pares dentro do intervalo %d-%d vale %d\n", a, b, soma);
-  
-  return 0;
+    printf("A soma dos pares dentro do intervalo %d-%d vale %d\n", a, b, soma);
+    
+    return 0;
 }

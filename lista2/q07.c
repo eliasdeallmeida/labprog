@@ -3,22 +3,22 @@
 #include <stdio.h>
 
 int main(void){
-  int a, b;
-  float divisao;
+    int a, b;
+    float divisao;
 
-  printf("Valor de A: ");
-  scanf("%d", &a);
+    printf("Valor de A: ");
+    scanf("%d", &a);
 
-  do{
-    printf("Valor de B: ");
-    scanf("%d", &b);
-  
-    if(b == 0)
-      printf("Digite um valor para B diferente de zero!\n");
-  }while(b == 0);
+    do{
+        printf("Valor de B: ");
+        scanf("%d", &b);
+      
+        if(b == 0)
+            printf("Digite um valor para B diferente de zero!\n");
+    }while(b == 0);
 
-  divisao = (float)a / b;
-  printf("%d / %d = %.1f\n", a, b, divisao);
-  
-  return 0;
+    divisao = (float)a / b;
+    printf("%d / %d = %.1f\n", a, b, divisao);
+    
+    return 0;
 }

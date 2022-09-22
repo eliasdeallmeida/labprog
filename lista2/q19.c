@@ -3,27 +3,27 @@
 #include <stdio.h>
 
 int main(void){
-  int a, b, soma = 0;
-  float media;
+    int a, b, soma = 0;
+    float media;
 
-  printf("Informe um intervalo de números\n");
-  printf("Valor de A = ");
-  scanf("%d", &a);
-  printf("Valor de B = ");
-  scanf("%d", &b);
+    printf("Informe um intervalo de números\n");
+    printf("Valor de A = ");
+    scanf("%d", &a);
+    printf("Valor de B = ");
+    scanf("%d", &b);
 
-  if(a > b){
-    a ^= b;
-    b ^= a;
-    a ^= b;
-  }
+    if(a > b){
+        a ^= b;
+        b ^= a;
+        a ^= b;
+    }
 
-  for(int i = a; i <= b; i++){
-    soma += i;
-  }
-  media = (float)soma / (b - a + 1);
+    for(int i = a; i <= b; i++){
+        soma += i;
+    }
+    media = (float)soma / (b - a + 1);
 
-  printf("A média aritmética dos números de %d a %d vale %.1f\n", a, b, media);
-  
-  return 0;
+    printf("A média aritmética dos números de %d a %d vale %.1f\n", a, b, media);
+    
+    return 0;
 }

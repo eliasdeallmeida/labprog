@@ -4,12 +4,12 @@
 #include <math.h>
 
 int main(void){
-  int potencia;
-  
-  for(int n = 0; n <= 7; n++){
-    potencia = pow(3, n);
-    printf("3^%d = %d\n", n, potencia);
-  }
-  
-  return 0;
+    int potencia;
+    
+    for(int n = 0; n <= 7; n++){
+        potencia = pow(3, n);
+        printf("3^%d = %d\n", n, potencia);
+    }
+    
+    return 0;
 }

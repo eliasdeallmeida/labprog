@@ -3,23 +3,23 @@
 #include <stdio.h>
 
 int main(void){
-  int num, fatorial = 1;
+    int num, fatorial = 1;
 
-  printf("Digite um número: ");
-  scanf("%d", &num);
-  
-  printf("%d! = ", num);
-  
-  if(num >= 0){
-    while(num >= 1){
-      fatorial *= num;
-      num--;
+    printf("Digite um número: ");
+    scanf("%d", &num);
+    
+    printf("%d! = ", num);
+    
+    if(num >= 0){
+        while(num >= 1){
+            fatorial *= num;
+            num--;
+        }
+        printf("%d\n", fatorial);
     }
-    printf("%d\n", fatorial);
-  }
-  else{
-    printf("ERRO\n");
-  }
-  
-  return 0;
+    else{
+        printf("ERRO\n");
+    }
+    
+    return 0;
 }
