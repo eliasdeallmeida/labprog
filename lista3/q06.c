@@ -14,8 +14,8 @@ void limpaBuffer(){
 
 int main(void){
     char str[TAM], inverso[TAM];
-    int t;
-    
+    int t, p;
+
     printf("Digite uma frase: ");
     fgets(str, TAM, stdin);
     str[strcspn(str, "\n")] = '\0';
@@ -25,11 +25,17 @@ int main(void){
     t = strlen(str);
 
     for(int i = 0; i < TAM; i++){
-        if(str[t-i-1] != '\0')
-            inverso[i] = str[t-i-1];
+        p = t-i-1;
+        if(p < 0){
+            inverso[i] = '\0';
+            break;
+        }
+        else if(str[p] != '\0'){
+            inverso[i] = str[p];
+        }
     }
 
-    printf("A frase '%s' invertida é '%s'\n", str, inverso);
+    printf("\nA frase '%s' invertida é '%s'\n", str, inverso);
 
     return 0;
 }

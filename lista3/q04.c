@@ -13,30 +13,34 @@ void limpaBuffer(){
 }
 
 int main(void){
-    char s1[TAM], s2[TAM];
-    int diferente = 0;
+    char str1[TAM], str2[TAM];
+    int i = 0, diferente = 0;
 
     printf("Digite uma frase: ");
-    fgets(s1, TAM, stdin);
-    s1[strcspn(s1, "\n")] = '\0';
-    if(strlen(s1) >= TAM-1)
+    fgets(str1, TAM, stdin);
+    str1[strcspn(str1, "\n")] = '\0';
+    if(strlen(str1) >= TAM-1)
         limpaBuffer();
-    printf("Frase 1 = %s\n", s1);
 
     printf("Digite outra frase: ");
-    fgets(s2, TAM, stdin);
-    s2[strcspn(s2, "\n")] = '\0';
-    if(strlen(s2) >= TAM-1)
+    fgets(str2, TAM, stdin);
+    str2[strcspn(str2, "\n")] = '\0';
+    if(strlen(str2) >= TAM-1)
         limpaBuffer();
-    printf("Frase 2 = %s\n", s2);
+
+    printf("Frase 1 = %s\n", str1);
+    printf("Frase 2 = %s\n", str2);
 
     printf("Verificando COM strcmp(): ");
-    (strcmp(s1, s2))? puts("Frases diferentes.") : puts("Frases iguais.");
+    (strcmp(str1, str2))? puts("Frases diferentes.") : puts("Frases iguais.");
 
     printf("Verificando SEM strcmp(): ");
     for(int i = 0; i < TAM; i++){
-        if(s1[i] != s2[i]){
+        if(str1[i] != str2[i]){
             diferente++;
+            break;
+        }
+        else if(str1[i] == '\0' && str2[i] == '\0'){
             break;
         }
     }

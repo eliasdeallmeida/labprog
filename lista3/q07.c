@@ -18,7 +18,7 @@ int main(void){
     srand(time(NULL));
 
     for(int i = 0; i < TAM; i++){
-        num[i] = rand() / (float)RAND_MAX * MAX;
+        num[i] = rand() % MAX;
         soma += num[i];
         produto *= num[i];
         printf("%dº valor = %d\n", i+1, num[i]);

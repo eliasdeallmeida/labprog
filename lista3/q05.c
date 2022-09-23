@@ -13,37 +13,38 @@ void limpaBuffer(){
 }
 
 int main(void){
-    char s1[TAM], s2[TAM], concat1[TAM*2] = "", concat2[TAM*2];
+    char str1[TAM], str2[TAM], concat1[TAM*2] = "", concat2[TAM*2];
     int i = 0, j = 0;
 
     printf("Digite uma frase: ");
-    fgets(s1, TAM, stdin);
-    s1[strcspn(s1, "\n")] = '\0';
-    if(strlen(s1) >= TAM-1)
+    fgets(str1, TAM, stdin);
+    str1[strcspn(str1, "\n")] = '\0';
+    if(strlen(str1) >= TAM-1)
         limpaBuffer();
-    printf("Frase 1 = %s\n", s1);
 
     printf("Digite outra frase: ");
-    fgets(s2, TAM, stdin);
-    s2[strcspn(s2, "\n")] = '\0';
-    if(strlen(s2) >= TAM-1)
+    fgets(str2, TAM, stdin);
+    str2[strcspn(str2, "\n")] = '\0';
+    if(strlen(str2) >= TAM-1)
         limpaBuffer();
-    printf("Frase 2 = %s\n", s2);
+
+    printf("Frase 1 = %s\n", str1);
+    printf("Frase 2 = %s\n", str2);
 
     printf("Concatenando COM strcat(): ");
-    strcat(concat1, s1);
-    strcat(concat1, s2);
+    strcat(concat1, str1);
+    strcat(concat1, str2);
     printf("%s\n", concat1);
 
     printf("Concatenando SEM strcat(): ");
-    while(s1[i] != '\0'){
-        concat2[j] = s1[i];
+    while(str1[i] != '\0'){
+        concat2[j] = str1[i];
         i++;
         j++;
     }
     i = 0;
-    while(s2[i] != '\0'){
-        concat2[j] = s2[i];
+    while(str2[i] != '\0'){
+        concat2[j] = str2[i];
         i++;
         j++;
     }
