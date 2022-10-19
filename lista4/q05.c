@@ -1,39 +1,32 @@
 // Escreva um programa que encontre o tamanho de uma string fornecida. Utilize ponteiros.
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-void limpaBuffer();
+#define TAM 20
+
+void contaCaracteres(char*, int*);
 
 int main(void){
-    char *str;
-    int tam, cont;
-
-    printf("Informe o tamanho da string: ");
-    scanf("%d", &tam);
-    limpaBuffer();
-
-    str = malloc(tam * sizeof(char));
+    char str[TAM];
+    int cont = 0;
 
     printf("Informe a string: ");
-    fgets(str, tam, stdin);
-
+    fgets(str, TAM, stdin);
     str[strcspn(str, "\n")] = '\0';
-    cont = strlen(str);
-    if(cont >= tam) limpaBuffer();
+    
+    contaCaracteres(str, &cont);
 
     printf("String informada: '%s'\n", str);
-    printf("A string tem %d caracteres\n", cont);
-
-    free(str);
+    printf("Quantidade de caracteres = %d\n", cont);
     
     return 0;
 }
 
-void limpaBuffer(){
-    char c;
-    do{
-        c = getchar();
-    }while(c != '\n' && c != EOF);
+void contaCaracteres(char *pstr, int *pcont){
+    int i = 0;
+    while(*(pstr + i) != '\0'){
+        i++;
+        *pcont += 1;
+    }
 }
