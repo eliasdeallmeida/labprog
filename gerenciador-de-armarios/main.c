@@ -10,10 +10,9 @@ unsigned char desocupaArmario(unsigned char armario);
 
 int main(void){
     unsigned char armario = 0, opcao, posicao;
-
     srand(time(NULL));
+
     printf("===== SISTEMA DE ARMÁRIOS IFCE =====\n");
-    
     do{
         printf("\n-------- PAINEL --------\n");
         for(int i = 0; i < TOTAL; i++){
